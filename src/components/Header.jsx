@@ -10,9 +10,7 @@ const Header = () => {
     <header className="border-b border-gray-200 bg-white fixed top-0 z-50 w-full">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <a href="#home" className="flex items-center space-x-3">
-            <Logo />
-          </a>
+          <Logo />
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-5">

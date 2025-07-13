@@ -1,7 +1,8 @@
 import { CheckCircle, Mail, MapPin, Phone, Calendar } from "lucide-react";
 import React, { useState } from "react";
-
 import FormInput from "./FormInput";
+import { EmailJSResponseStatus } from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,12 +14,48 @@ const Contact = () => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: [e.target.value] });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleOnSubmit = (e) => {
+    setLoading(true);
     e.preventDefault();
+
+    // const serviceID = "service_ga1uey3";
+    // const templateID = "template_u4f8erq";
+    // const publicKey = "WTXitCVbdjxfbWhT0";
+
+    const templateParams = {
+      first_name: formData.firstName,
+      last_name: formData.lastName,
+      email: formData.email,
+      phone: formData.phone,
+      legal_matter: formData.legalMatter,
+      message: formData.message,
+    };
+
+    EmailJSResponseStatus
+      .send(serviceID, templateID, templateParams, publicKey)
+      .then((response) => {
+        setLoading(false);
+        toast.success("Message sent successfully!");
+
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          legalMatter: "",
+          message: "",
+        });
+      })
+      .catch((err) => {
+        setLoading(false);
+        toast.error("Something went wrong. Please try again later.");
+      });
   };
   return (
     <section id="contact" className="py-20 md:py-32">
@@ -169,7 +206,7 @@ const Contact = () => {
                 {/* Message*/}
                 <div>
                   <label className="text-sm font-medium text-slate-700 mb-2 block">
-                   How can we help you?
+                    How can we help you?
                   </label>
                   <textarea
                     name="message"
@@ -186,8 +223,8 @@ const Contact = () => {
                   type="submit"
                   className="flex items-center justify-center gap-3 w-full bg-primary-clr hover:bg-primary-dull text-white font-semibold rounded-md py-2 cursor-pointer"
                 >
-                  <Calendar className="w-4 h-4"/>
-                  Send Message
+                  <Calendar className="w-4 h-4" />
+                  {loading ? "Sending message....." : "Send Message"}
                 </button>
 
                 <p className="text-xs text-gray-500 text-center">
