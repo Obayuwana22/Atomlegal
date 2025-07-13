@@ -93,11 +93,11 @@ const Services = () => {
               ].map((service, index) => (
                 <div
                   key={index}
-                  className="border border-gray-200 hover:shadow-lg transition-shadow"
+                  className="border border-gray-200 hover:shadow-lg transition-shadow p-5"
                 >
                   <div className="text-center">
                     <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                      <service.icon className="h-8 w-8 text-blue-900" />
+                      <service.icon className="h-8 w-8 text-primary-clr" />
                     </div>
                     <div className="text-gray-900">
                       {service.title}
@@ -106,14 +106,14 @@ const Services = () => {
                       {service.description}
                     </div>
                   </div>
-                  <div>
+                  <div className='mt-5'>
                     <ul className="space-y-2">
                       {service.features.map((feature, idx) => (
                         <li
                           key={idx}
                           className="flex items-center text-sm text-gray-600"
                         >
-                          <CheckCircle className="w-4 h-4 text-green-600 mr-2 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-primary-clr mr-2 flex-shrink-0" />
                           {feature}
                         </li>
                       ))}

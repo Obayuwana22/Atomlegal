@@ -1,4 +1,5 @@
 import React from "react";
+import { assets } from "../../data";
 
 const Team = () => {
   return (
@@ -43,11 +44,11 @@ const Team = () => {
           ].map((attorney, index) => (
             <div
               key={index}
-              className="border border-gray-200 hover:shadow-lg transition-shadow"
+              className="border border-gray-200 hover:shadow-lg transition-shadow p-5"
             >
               <div className="text-center">
                 <img
-                  src={attorney.image || "/placeholder.svg"}
+                  src={assets.placeholder || "/placeholder.svg"}
                   alt={attorney.name}
                   className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                 />
@@ -66,7 +67,7 @@ const Team = () => {
                       <div
                         key={idx}
                         variant="secondary"
-                        className="bg-blue-100 text-blue-900"
+                        className="bg-blue-100 text-primary-clr px-3 rounded-full"
                       >
                         {specialty}
                       </div>

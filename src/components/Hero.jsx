@@ -4,7 +4,7 @@ import blueLine from "../assets/png/blue line.png";
 
 const Hero = () => {
   return (
-    <section className="py-20 md:py-32 bg-gray-50">
+    <section id="home" className="py-20 md:py-32 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-6">
@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="flex rounded-md bg-blue-900 hover:bg-blue-800 text-white px-8 py-3">
+            <button className="flex rounded-md bg-primary-clr hover:bg-primary-dull text-white px-8 py-3 cursor-pointer">
               <Calendar className="w-5 h-5 mr-2" />
               Free Consultation
             </button>

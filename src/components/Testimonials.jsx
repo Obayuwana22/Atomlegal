@@ -36,7 +36,7 @@ const Testimonials = () => {
                   rating: 5,
                 },
               ].map((testimonial, index) => (
-                <div key={index} className="border border-gray-200">
+                <div key={index} className="border border-gray-200 p-5">
                   <div>
                     <div className="flex items-center space-x-1 mb-4">
                       {[...Array(testimonial.rating)].map((_, i) => (

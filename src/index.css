@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary-clr: #1f89c2;
+  --color-primary-dull: #166a96;
+}
