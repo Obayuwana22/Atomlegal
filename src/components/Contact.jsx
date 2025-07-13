@@ -186,7 +186,7 @@ const Contact = () => {
                   type="submit"
                   className="flex items-center justify-center gap-3 w-full bg-primary-clr hover:bg-primary-dull text-white font-semibold rounded-md py-2 cursor-pointer"
                 >
-                  <Calendar />
+                  <Calendar className="w-4 h-4"/>
                   Send Message
                 </button>
 

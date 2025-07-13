@@ -5,14 +5,9 @@ import blueLine from "../assets/png/blue line.png";
 const Hero = () => {
   return (
     <section id="home" className="py-20 md:py-32 bg-gray-50">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 mt-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-6">
-            {/* <div className="bg-blue-100 text-blue-900 border-blue-200 px-4 py-2">
-                  <Award className="w-4 h-4 mr-2" />
-                  Serving the Community Since 1995
-                </div> */}
-
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
               Your Partner on
               <br />
