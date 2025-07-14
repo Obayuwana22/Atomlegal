@@ -4,3 +4,21 @@
   --color-primary-clr: #1f89c2;
   --color-primary-dull: #166a96;
 }
+
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('/centurygothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('/centurygothic_bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@theme{
+  --font-display: "CenturyGothic", "sans-serif";
+}
