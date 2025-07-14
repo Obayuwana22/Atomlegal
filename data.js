@@ -1,7 +1,7 @@
 import placeholder from "./src/assets/gravel.avif";
 import logo from "./src/assets/png/Atom logo final.png";
 import sliderOne from "./src/assets/slider-1.jpg";
-import sliderTwo from "./src/assets/slider-2.jpg";
+import sliderTwo from "./src/assets/slider-2.jpeg";
 import sliderThree from "./src/assets/slider-3.jpg";
 import sliderFour from "./src/assets/slider-4.jpg";
 import lawyerOne from "./src/assets/lawyer-1.jpg";
