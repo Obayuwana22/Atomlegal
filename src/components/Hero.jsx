@@ -24,7 +24,8 @@ const Hero = () => {
             </h1>
 
             <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
-              Expert Legal Solutions. Industry Insight. Trusted Results.
+              Industry Insight. Trusted Results.
+              {/* Expert Legal Solutions. */}
             </p>
           </div>
 
