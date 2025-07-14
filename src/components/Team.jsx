@@ -1,5 +1,5 @@
 import React from "react";
-import { assets } from "../../data";
+import { assets, team } from "../../data";
 
 const Team = () => {
   return (
@@ -16,39 +16,14 @@ const Team = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {[
-            {
-              name: "David Morrison",
-              title: "Managing Partner",
-              specialties: ["Business Law", "Civil Litigation"],
-              experience: "28 years",
-              education: "Harvard Law School",
-              image: "/placeholder.svg?height=300&width=300",
-            },
-            {
-              name: "Sarah Chen",
-              title: "Senior Partner",
-              specialties: ["Family Law", "Estate Planning"],
-              experience: "22 years",
-              education: "Stanford Law School",
-              image: "/placeholder.svg?height=300&width=300",
-            },
-            {
-              name: "Michael Rodriguez",
-              title: "Partner",
-              specialties: ["Criminal Defense", "Personal Injury"],
-              experience: "18 years",
-              education: "Columbia Law School",
-              image: "/placeholder.svg?height=300&width=300",
-            },
-          ].map((attorney, index) => (
+          {team.map((attorney, index) => (
             <div
               key={index}
               className="border border-gray-200 hover:shadow-lg transition-shadow p-5"
             >
               <div className="text-center">
                 <img
-                  src={assets.placeholder || "/placeholder.svg"}
+                  src={attorney.image || "/placeholder.svg"}
                   alt={attorney.name}
                   className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                 />

@@ -1,8 +1,8 @@
 import { CheckCircle, Mail, MapPin, Phone, Calendar } from "lucide-react";
 import React, { useState } from "react";
 import FormInput from "./FormInput";
-import { EmailJSResponseStatus } from "@emailjs/browser";
-import { toast } from "react-toastify";
+import emailjs  from "@emailjs/browser";
+import { toast, ToastContainer } from "react-toastify";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -24,9 +24,9 @@ const Contact = () => {
     setLoading(true);
     e.preventDefault();
 
-    // const serviceID = "service_ga1uey3";
-    // const templateID = "template_u4f8erq";
-    // const publicKey = "WTXitCVbdjxfbWhT0";
+    const serviceID = "service_eaju41s";
+    const templateID = "template_ynxmyji";
+    const publicKey = "wvNwPwVjg22NbwRbb";
 
     const templateParams = {
       first_name: formData.firstName,
@@ -37,8 +37,7 @@ const Contact = () => {
       message: formData.message,
     };
 
-    EmailJSResponseStatus
-      .send(serviceID, templateID, templateParams, publicKey)
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
       .then((response) => {
         setLoading(false);
         toast.success("Message sent successfully!");
@@ -59,14 +58,17 @@ const Contact = () => {
   };
   return (
     <section id="contact" className="py-20 md:py-32">
+      <ToastContainer />
       <div className="container mx-auto px-6">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Get Started Today
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to discuss your legal needs? Contact us for a free
-            consultation and let us help you navigate your legal challenges.
+            Whether you're a multinational investor, a government institution,
+            or a growing enterprise, Atom is your legal partner for clarity,
+            confidence, and success. Contact us today to schedule a consultation
+            or learn more about how we can support your goals.
           </p>
         </div>
 
@@ -120,24 +122,29 @@ const Contact = () => {
             <div className="border border-gray-200 bg-blue-50 rounded-lg">
               <div className="p-6">
                 <h3 className="font-semibold text-gray-900 mb-4">
-                  Why Choose Morrison & Associates?
+                  Why Choose Atom?
                 </h3>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-center">
                     <CheckCircle className="w-4 h-4 text-primary-clr mr-2" />
-                    Free initial consultation
+                    Industry-specific legal expertise
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-4 h-4 text-primary-clr mr-2" />
-                    Transparent, upfront pricing
+                    Proven track record in complex transactions and disputes
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-4 h-4 text-primary-clr mr-2" />
-                    Regular case updates
+                    Deep understanding of Nigeria’s legal and regulatory
+                    frameworks
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="w-4 h-4 text-primary-clr mr-2" />
-                    28+ years of experience
+                    Strategic, client-focused approach
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-4 h-4 text-primary-clr mr-2" />
+                    Nationwide and international reach through trusted networks
                   </li>
                 </ul>
               </div>
@@ -160,7 +167,7 @@ const Contact = () => {
                   {/* First Name */}
                   <FormInput
                     label="First Name"
-                    name="first name"
+                    name="firstName"
                     type="text"
                     placeholder="John"
                     value={formData.firstName}
@@ -169,7 +176,7 @@ const Contact = () => {
                   {/* Last Name */}
                   <FormInput
                     label="Last Name"
-                    name="last name"
+                    name="lastName"
                     type="text"
                     placeholder="Doe"
                     value={formData.lastName}
@@ -197,7 +204,7 @@ const Contact = () => {
                 {/* Legal Matter */}
                 <FormInput
                   label="Legal Matter"
-                  name="legal matter"
+                  name="legalMatter"
                   type="text"
                   placeholder="Brief description of your legal needs"
                   value={formData.legalMatter}
@@ -214,7 +221,7 @@ const Contact = () => {
                     rows={4}
                     required
                     placeholder="Please briefly describe your legal situation"
-                    className="text-gray-300 px-4 py-2 text-sm border border-gray-300 rounded-md w-full placeholder:text-gray-500 focus:border-2 focus:border-black focus:outline-offset-5 focus:outline-gray-400 focus:rounded-md"
+                    className="text-gray-600 px-4 py-2 text-sm border border-gray-300 rounded-md w-full placeholder:text-gray-400 focus:border-2 focus:border-black focus:outline-offset-5 focus:outline-gray-400 focus:rounded-md"
                     value={formData.message}
                     onChange={handleChange}
                   />

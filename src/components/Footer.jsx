@@ -9,17 +9,7 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <Logo />
-            {/* <div className="flex items-center space-x-3">
-                <div className="w-8 h-8 bg-blue-900 rounded-lg flex items-center justify-center">
-                  <Scale className="h-5 w-5 text-white" />
-                </div>
-                <div>
-                  <span className="text-lg font-semibold text-gray-900">
-                    Morrison & Associates
-                  </span>
-                  <div className="text-sm text-gray-600">Attorneys at Law</div>
-                </div>
-              </div> */}
+
             <p className="text-gray-600 text-sm">
               Providing exceptional legal representation to our community since
               1995.
@@ -31,22 +21,22 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
                 <a href="#" className="hover:text-blue-900 transition-colors">
-                  Business Law
+                  Corporate & Commercial Advisory
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-900 transition-colors">
-                  Family Law
+                  Deal Structuring & Transaction Support
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-900 transition-colors">
-                  Civil Litigation
+                  Regulatory & Public Policy Advisory
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-900 transition-colors">
-                  Criminal Defense
+                  Dispute Resolution
                 </a>
               </li>
             </ul>
@@ -96,7 +86,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>info@morrisonlaw.com</span>
+                <span>info@atomenergy.com</span>
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
@@ -112,8 +102,8 @@ const Footer = () => {
 
         <div className="border-t border-gray-200 mt-8 pt-8 text-center text-sm text-gray-600">
           <p>
-            &copy; {new Date().getFullYear()} Morrison & Associates. All rights
-            reserved. | Privacy Policy | Terms of Service | Attorney Advertising
+            &copy; {new Date().getFullYear()} Atom. All rights reserved. |
+            Privacy Policy | Terms of Service | Attorney Advertising
           </p>
         </div>
       </div>

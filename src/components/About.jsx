@@ -12,17 +12,21 @@ const About = () => {
                 Committed to Excellence in Legal Representation
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Since 1995, Morrison & Associates has been dedicated to
-                providing exceptional legal services to our community. We
-                understand that legal issues can be overwhelming, which is why
-                we're committed to making the process as clear and
-                straightforward as possible.
+                Driven by Expertise. Committed to Excellence. Atom is a full-service Nigerian law firm offering strategic
+                legal support to clients across key sectors of the economy. With
+                a deep understanding of industry dynamics and a strong grasp of
+                regulatory environments, we provide practical, commercially
+                focused legal solutions. 
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Our approach combines deep legal expertise with genuine care for
-                our clients. We take the time to understand your unique
-                situation and work tirelessly to achieve the best possible
-                outcome for your case.
+                Our multidisciplinary team blends legal
+                proficiency with sector-specific knowledge, enabling us to
+                support clients through every stage of the value chain from
+                project development and financing to compliance, operations, and
+                dispute resolution. We are proud to partner with corporations,
+                government institutions, investors, and entrepreneurs committed
+                to success in Nigeria’s dynamic business and regulatory
+                environment.
               </p>
             </div>
 

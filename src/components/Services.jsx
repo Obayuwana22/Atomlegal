@@ -1,5 +1,6 @@
 import { Award, Building, CheckCircle, Gavel, Heart, Shield, Users } from 'lucide-react'
 import React from 'react'
+import { services } from '../../data'
 
 const Services = () => {
   return (
@@ -17,80 +18,7 @@ const Services = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {[
-                {
-                  icon: Building,
-                  title: "Business Law",
-                  description:
-                    "Corporate formation, contracts, and business transactions",
-                  features: [
-                    "Entity Formation",
-                    "Contract Review",
-                    "Business Transactions",
-                    "Compliance",
-                  ],
-                },
-                {
-                  icon: Users,
-                  title: "Family Law",
-                  description:
-                    "Divorce, custody, and family-related legal matters",
-                  features: [
-                    "Divorce Proceedings",
-                    "Child Custody",
-                    "Adoption",
-                    "Prenuptial Agreements",
-                  ],
-                },
-                {
-                  icon: Gavel,
-                  title: "Civil Litigation",
-                  description:
-                    "Representing clients in civil disputes and court proceedings",
-                  features: [
-                    "Personal Injury",
-                    "Contract Disputes",
-                    "Employment Law",
-                    "Appeals",
-                  ],
-                },
-                {
-                  icon: Shield,
-                  title: "Criminal Defense",
-                  description:
-                    "Aggressive defense for criminal charges and investigations",
-                  features: [
-                    "DUI Defense",
-                    "White Collar Crime",
-                    "Drug Charges",
-                    "Appeals",
-                  ],
-                },
-                {
-                  icon: Heart,
-                  title: "Estate Planning",
-                  description:
-                    "Wills, trusts, and estate administration services",
-                  features: [
-                    "Wills & Trusts",
-                    "Probate",
-                    "Estate Administration",
-                    "Tax Planning",
-                  ],
-                },
-                {
-                  icon: Award,
-                  title: "Real Estate Law",
-                  description:
-                    "Property transactions and real estate legal services",
-                  features: [
-                    "Property Transactions",
-                    "Title Issues",
-                    "Zoning",
-                    "Commercial Leases",
-                  ],
-                },
-              ].map((service, index) => (
+              {services.map((service, index) => (
                 <div
                   key={index}
                   className="border border-gray-200 hover:shadow-lg transition-shadow p-5"

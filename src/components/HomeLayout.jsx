@@ -18,8 +18,8 @@ const HomeLayout = () => {
         <Hero />
         <Services />
         <About />
-        <Team />
-        <Testimonials />
+        {/* <Team /> */}
+        {/* <Testimonials /> */}
         <Contact />
       </main>
       <Footer />
