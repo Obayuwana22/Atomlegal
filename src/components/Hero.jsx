@@ -13,24 +13,18 @@ const Hero = () => {
             <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
               Your Partner on
               <br />
-              <div className="relative mb-16 w-full">
+              <div className="relative mb-10 w-full">
                 <span>the Path to Justice.</span>
                 <img
                   src={blueLine}
                   alt=""
-                  className="absolute right-1/2 translate-x-[130px] -translate-y-[] w-52 md:translate-x-[250px] md:w-96"
+                  className="absolute right-1/2 translate-x-[130px] -translate-y-[] w-52 md:translate-x-[250px] md:w-96 hidden md:block"
                 />
               </div>
             </h1>
 
             <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
-              Expert Legal Solutions. Industry Insight. Trusted Results. At Atom, we deliver comprehensive legal services tailored
-              to the complexities of Nigeria’s economic landscape. Whether
-              you're navigating regulatory frameworks, closing high-stakes
-              transactions, or resolving critical disputes, our team of seasoned
-              legal professionals is equipped to guide you from start to finish.
-              We operate at the intersection of law, business, and policy across
-              energy, maritime, and the public sector.
+              Expert Legal Solutions. Industry Insight. Trusted Results.
             </p>
           </div>
 
