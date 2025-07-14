@@ -1,7 +1,7 @@
 import { CheckCircle, Mail, MapPin, Phone, Calendar } from "lucide-react";
 import React, { useState } from "react";
 import FormInput from "./FormInput";
-import emailjs  from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";
 
 const Contact = () => {
@@ -37,7 +37,8 @@ const Contact = () => {
       message: formData.message,
     };
 
-    emailjs.send(serviceID, templateID, templateParams, publicKey)
+    emailjs
+      .send(serviceID, templateID, templateParams, publicKey)
       .then((response) => {
         setLoading(false);
         toast.success("Message sent successfully!");
@@ -79,10 +80,10 @@ const Contact = () => {
                 <div className="p-6 text-center">
                   <Phone className="w-8 h-8 text-primary-clr mx-auto mb-3" />
                   <div className="font-semibold text-gray-900">Call Us</div>
-                  <div className="text-gray-600">(555) 123-4567</div>
-                  <div className="text-sm text-gray-500 mt-1">
+                  <div className="text-gray-600">+234 906 049 0067</div>
+                  {/* <div className="text-sm text-gray-500 mt-1">
                     Mon-Fri 8AM-6PM
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
@@ -90,10 +91,12 @@ const Contact = () => {
                 <div className="p-6 text-center">
                   <Mail className="w-8 h-8 text-primary-clr mx-auto mb-3" />
                   <div className="font-semibold text-gray-900">Email Us</div>
-                  <div className="text-gray-600">info@morrisonlaw.com</div>
-                  <div className="text-sm text-gray-500 mt-1">
-                    24hr Response
+                  <div className="text-gray-600">
+                    advisory@atom-energylaw.com
                   </div>
+                  {/* <div className="text-sm text-gray-500 mt-1">
+                    24hr Response
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -107,13 +110,11 @@ const Contact = () => {
                       Visit Our Office
                     </div>
                     <div className="text-gray-600">
-                      123 Main Street, Suite 400
-                      <br />
-                      Downtown City, State 12345
+                      No. 32 Obi Okosi, Gwarinpa-FCT
                     </div>
-                    <div className="text-sm text-gray-500 mt-2">
+                    {/* <div className="text-sm text-gray-500 mt-2">
                       Free parking available
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -125,25 +126,25 @@ const Contact = () => {
                   Why Choose Atom?
                 </h3>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary-clr mr-2" />
+                  <li className="flex  items-center">
+                    <CheckCircle className="max-w-4 h-4 text-primary-clr mr-2" />
                     Industry-specific legal expertise
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary-clr mr-2" />
+                    <CheckCircle className="max-w-4 h-4 text-primary-clr mr-2" />
                     Proven track record in complex transactions and disputes
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary-clr mr-2" />
+                    <CheckCircle className="max-w-4 h-4 text-primary-clr mr-2" />
                     Deep understanding of Nigeria’s legal and regulatory
                     frameworks
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary-clr mr-2" />
+                    <CheckCircle className="max-w-4 h-4 text-primary-clr mr-2" />
                     Strategic, client-focused approach
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary-clr mr-2" />
+                    <CheckCircle className="max-w-4 h-4 text-primary-clr mr-2" />
                     Nationwide and international reach through trusted networks
                   </li>
                 </ul>

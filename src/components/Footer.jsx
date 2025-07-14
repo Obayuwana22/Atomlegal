@@ -11,8 +11,7 @@ const Footer = () => {
             <Logo />
 
             <p className="text-gray-600 text-sm">
-              Providing exceptional legal representation to our community since
-              1995.
+              Providing exceptional legal representation to our community
             </p>
           </div>
 
@@ -42,7 +41,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h3 className="font-semibold text-gray-900">Quick Links</h3>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
@@ -75,27 +74,27 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="space-y-4">
             <h3 className="font-semibold text-gray-900">Contact Info</h3>
             <ul className="space-y-2 text-sm text-gray-600">
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>(555) 123-4567</span>
+                <span>+234 906 049 0067</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>info@atomenergy.com</span>
+                <span>advisory@atom-energylaw.com</span>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex md:items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>123 Main Street, Suite 400</span>
+                No. 32 Obi Okosi, Gwarinpa-FCT
               </li>
-              <li className="flex items-center space-x-2">
+              {/* <li className="flex items-center space-x-2">
                 <Clock className="h-4 w-4" />
                 <span>Mon-Fri 8AM-6PM</span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

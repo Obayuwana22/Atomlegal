@@ -30,7 +30,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-6">
+            {/* <div className="grid grid-cols-2 gap-6">
               <div className="text-center p-6 bg-white rounded-lg border border-gray-200">
                 <div className="text-2xl font-bold text-primary-clr mb-2">
                   AV Rated
@@ -43,7 +43,7 @@ const About = () => {
                 </div>
                 <div className="text-sm text-gray-600">Local Recognition</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="relative">

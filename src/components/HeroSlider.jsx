@@ -31,14 +31,10 @@ export function HeroSlider({ images, interval = 5000, className, ...props }) {
           key={image.src}
           src={image.src || "/placeholder.svg"}
           alt={image.alt}
-          fill
           sizes="100vw"
           priority={index === 0} // Prioritize loading the first image
           className={`absolute inset-0 object-cover transition-opacity duration-1000 ease-in-out h-screen w-full
             ${index === currentImageIndex ? "opacity-100" : "opacity-0"} `}
-          style={{
-            objectFit: "cover",
-          }}
         />
       ))}
       <div className="absolute inset-0 bg-black/50 z-10" />
