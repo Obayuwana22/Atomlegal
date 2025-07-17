@@ -104,6 +104,18 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Atom Energy Law Advisory. All
             rights reserved.
           </p>
+
+          <p>
+            <a
+              href="
+            https://www.linkedin.com/company/atom-energy-law-advisory/"
+              target="_black"
+              className="hover:text-blue-500"
+            >
+              Linkedin
+            </a>
+            <p>Terms of Use | Privacy Policy</p>
+          </p>
         </div>
       </div>
     </footer>

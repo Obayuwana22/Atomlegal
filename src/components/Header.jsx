@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header className="border-b border-gray-200 bg-white fixed top-0 z-50 w-full">
-      <div className="container mx-auto px-6 py-4">
+      <div className="mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Logo />
 
@@ -59,7 +59,7 @@ const Header = () => {
             </a>
             <button className="flex items-center justify-center px-5 py-2 rounded-md bg-primary-clr hover:bg-primary-dull transition duration-300 text-white cursor-pointer">
               <Calendar className="w-4 h-4 mr-2" />
-              Schedule Consultation
+               Consultation
             </button>
           </nav>
 
