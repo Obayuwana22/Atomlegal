@@ -34,7 +34,7 @@ const Sectors = () => {
                 <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <sector.icon className="h-8 w-8 text-primary-clr" />
                 </div>
-                <div className="text-gray-900">{sector.title}</div>
+                <div className="text-gray-900 mb-2">{sector.title}</div>
                 <div className="text-gray-600">{sector.description}</div>
               </div>
               {/* <div className="mt-5">
