@@ -66,10 +66,7 @@ const Contact = () => {
             Get Started Today
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Whether you're a multinational investor, a government institution,
-            or a growing enterprise, Atom is your legal partner for clarity,
-            confidence, and success. Contact us today to schedule a consultation
-            or learn more about how we can support your goals.
+            Let’s talk about how we can support your energy project or legal advisory needs.
           </p>
         </div>
 
@@ -120,7 +117,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="border border-gray-200 bg-blue-50 rounded-lg">
+            {/* <div className="border border-gray-200 bg-blue-50 rounded-lg">
               <div className="p-6">
                 <h3 className="font-semibold text-gray-900 mb-4">
                   Why Choose Atom?
@@ -149,7 +146,7 @@ const Contact = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <form onSubmit={handleOnSubmit}>

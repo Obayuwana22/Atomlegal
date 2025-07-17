@@ -51,87 +51,59 @@ export const team = [
 export const services = [
   {
     icon: Award,
-    title: "Energy",
+    title: "Deal & Transaction Advisory",
     description:
-      "Our lawyers provide end-to-end legal support in Nigeria’s energy sector—oil & gas (upstream, midstream, and downstream), power generation, renewables, and energy transition.",
-    features: [
-      "Oil & Gas Contracts",
-      "Power Purchase Agreements",
-      "Licensing & Compliance",
-      "Energy Sector M&A",
-    ],
+      "Structuring, negotiation, and execution of complex deals—from joint ventures and production sharing agreements to asset acquisitions and EPC contracts.",
   },
   {
     icon: Building,
-    title: "Corporate & Commercial Advisory",
+    title: "Regulatory Compliance",
     description:
-      "We advise on corporate structuring, business formation, commercial transactions, contract drafting and negotiation, joint ventures, mergers & acquisitions, and regulatory compliance.",
-    features: [
-      "Business Incorporation",
-      "Joint Ventures",
-      "Shareholder Agreements",
-      "Regulatory Compliance",
-    ],
+      "End-to-end support in securing and maintaining licences, permits, and regulatory approvals. We help clients stay ahead of evolving rules and mitigate non-compliance risks.",
   },
   {
     icon: Users,
-    title: "Regulatory & Public Policy Advisory",
+    title: "Policy & Legislative Advisory",
     description:
-      "With strong policy insight, we advise clients on government relations, legislative compliance, licensing, and engagement with public institutions and regulators.",
-    features: [
-      "Licensing & Permits",
-      "Legislative Monitoring",
-      "Government Relations",
-      "Regulatory Due Diligence",
-    ],
+      "We support public and private sector clients in shaping, interpreting, and implementing laws, regulations, and policies impacting the energy ecosystem.",
   },
   {
     icon: Gavel,
-    title: "Dispute Resolution",
+    title: "Dispute Resolution & Risk Management",
     description:
-      "We offer robust representation in litigation, arbitration, and alternative dispute resolution (ADR), helping clients achieve favorable outcomes in commercial, regulatory, and sector-specific disputes.",
-    features: [
-      "Commercial Litigation",
-      "Arbitration",
-      "Mediation & ADR",
-      "Enforcement of Judgments",
-    ],
+      "We help clients resolve disputes efficiently—through litigation, arbitration, or alternative dispute resolution—especially in high-stakes energy and infrastructure contexts.",
   },
   {
     icon: Shield,
-    title: "Deal Structuring & Transaction Support",
+    title: "General Counsel Support",
     description:
-      "Our team provides legal support for project finance, private equity, infrastructure development, and cross-border investments, ensuring risk mitigation and regulatory alignment at every stage of a deal.",
-    features: [
-      "Project Finance Agreements",
-      "Risk Assessment",
-      "Regulatory Approvals",
-      "Private Equity Transactions",
-    ],
-  },
-  {
-    icon: Heart,
-    title: "Maritime & Shipping",
-    description:
-      "We deliver legal solutions for shipping operations, maritime contracts, port logistics, vessel registration, marine insurance, and regulatory compliance under Nigerian and international maritime law.",
-    features: [
-      "Charter Party Agreements",
-      "Vessel Registration",
-      "Port Operations",
-      "Marine Insurance Claims",
-    ],
-  },
-  {
-    icon: Gavel,
-    title: "Public Sector & Policy",
-    description:
-      "We advise government agencies, development partners, and NGOs on regulatory reform, institutional frameworks, legislative drafting, and public-private partnerships.",
-    features: [
-      "Public-Private Partnerships",
-      "Policy Drafting",
-      "Institutional Reform",
-      "Stakeholder Engagement",
-    ],
+      "Retainer services for energy companies without full in-house legal teams, offering embedded advisory tailored to your operations and regulatory landscape.",
   },
 ];
 
+export const sectors = [
+  {
+    icon: Award,
+    title: "Oil & Gas",
+    description:
+      "From licensing rounds and gas commercialisation to pipeline regulation and downstream compliance, we advise across upstream, midstream, and downstream oil and gas operations.",
+  },
+  {
+    icon: Building,
+    title: "Power",
+    description:
+      "We provide legal support across generation, transmission, and distribution—from embedded power projects to off-grid renewable energy solutions and energy transition frameworks.",
+  },
+  {
+    icon: Users,
+    title: "Mining & Extractives",
+    description:
+      "Advising operators, investors, and regulators in solid minerals, quarrying, and critical minerals development, with a focus on sustainable resource governance.",
+  },
+  {
+    icon: Gavel,
+    title: "Maritime & Shipping",
+    description:
+      "Our maritime practice covers vessel registration, cabotage, port operations, logistics, and marine dispute resolution within the petroleum supply chain.",
+  },
+];

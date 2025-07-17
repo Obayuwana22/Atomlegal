@@ -15,22 +15,41 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-5">
             <a
-              href="#services"
+              href="#home"
               className="text-gray-700 hover:text-primary-clr transition-colors"
             >
-              Services
+              Home
             </a>
             <a
               href="#about"
               className="text-gray-700 hover:text-primary-clr transition-colors"
             >
-              About
+              About Us
             </a>
             <a
-              href="#team"
+              href="#practice"
               className="text-gray-700 hover:text-primary-clr transition-colors"
             >
-              Our Team
+              Practice Area
+            </a>
+            <a
+              href="#sectors"
+              className="text-gray-700 hover:text-primary-clr transition-colors"
+            >
+              Our Sectors
+            </a>
+            <a
+              href="#services"
+              className="text-gray-700 hover:text-primary-clr transition-colors"
+            >
+              Services
+            </a>
+
+            <a
+              href="#insights"
+              className="text-gray-700 hover:text-primary-clr transition-colors"
+            >
+              Insights
             </a>
             <a
               href="#contact"
@@ -61,14 +80,23 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-gray-200">
             <nav className="flex flex-col space-y-4 pt-4">
+              <a href="#home" className="text-gray-700 hover:text-blue-900">
+              Home
+              </a>
+              <a href="#about" className="text-gray-700 hover:text-blue-900">
+                About Us
+              </a>
+              <a href="#practice" className="text-gray-700 hover:text-blue-900">
+                Practice Area
+              </a>
+              <a href="#sectors" className="text-gray-700 hover:text-blue-900">
+                Our Sectors
+              </a>
               <a href="#services" className="text-gray-700 hover:text-blue-900">
                 Services
               </a>
-              <a href="#about" className="text-gray-700 hover:text-blue-900">
-                About
-              </a>
-              <a href="#team" className="text-gray-700 hover:text-blue-900">
-                Our Team
+              <a href="#insights" className="text-gray-700 hover:text-blue-900">
+               Insights
               </a>
               <a href="#contact" className="text-gray-700 hover:text-blue-900">
                 Contact

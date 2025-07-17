@@ -12,21 +12,23 @@ const About = () => {
                 Committed to Excellence in Legal Representation
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Driven by Expertise. Committed to Excellence. Atom is a full-service Nigerian law firm offering strategic
-                legal support to clients across key sectors of the economy. With
-                a deep understanding of industry dynamics and a strong grasp of
-                regulatory environments, we provide practical, commercially
-                focused legal solutions. 
+                We are a boutique energy law advisory firm offering exclusive
+                tier 1 legal, and strategic advisory services to clients across
+                the energy and natural resources value chain.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Our multidisciplinary team blends legal
-                proficiency with sector-specific knowledge, enabling us to
-                support clients through every stage of the value chain from
-                project development and financing to compliance, operations, and
-                dispute resolution. We are proud to partner with corporations,
-                government institutions, investors, and entrepreneurs committed
-                to success in Nigeria’s dynamic business and regulatory
-                environment.
+                We work at the intersection of law, regulation, and commercial
+                operations—supporting both government bodies, private sector
+                entities, infrastructure investors, and project developers
+                operating across the oil and gas, power, mining, and maritime
+                sectors.
+              </p>
+
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Our value lies in our sector-specific insight, transactional
+                fluency, and policy awareness—allowing us to provide not just
+                legal advice, but commercially sound guidance tailored to
+                Nigeria’s evolving energy landscape.
               </p>
             </div>
 

@@ -2,12 +2,16 @@ import React from "react";
 import {
   Header,
   Hero,
-  Services,
+  PracticeAreas,
+  // Services,
   About,
   Team,
   Testimonials,
   Contact,
   Footer,
+  Insights,
+  Sectors,
+  Services,
 } from "../components";
 
 const HomeLayout = () => {
@@ -16,10 +20,14 @@ const HomeLayout = () => {
       <Header />
       <main className="flex-1">
         <Hero />
-        <Services />
         <About />
+        <PracticeAreas />
+        <Sectors />
+        <Services />
+
         {/* <Team /> */}
         {/* <Testimonials /> */}
+        <Insights />
         <Contact />
       </main>
       <Footer />

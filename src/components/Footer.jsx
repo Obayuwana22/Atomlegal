@@ -101,8 +101,8 @@ const Footer = () => {
 
         <div className="border-t border-gray-200 mt-8 pt-8 text-center text-sm text-gray-600">
           <p>
-            &copy; {new Date().getFullYear()} Atom. All rights reserved. |
-            Privacy Policy | Terms of Service | Attorney Advertising
+            &copy; {new Date().getFullYear()} Atom Energy Law Advisory. All
+            rights reserved.
           </p>
         </div>
       </div>

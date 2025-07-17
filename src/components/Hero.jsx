@@ -11,10 +11,10 @@ const Hero = () => {
         <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center text-white z-20">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
-              Your Partner on
+              Your Trusted Legal and Business Advisory Partner
               <br />
               <div className="relative mb-10 w-full">
-                <span>the Path to Justice.</span>
+                <span> in the Energy Sector.</span>
                 <img
                   src={blueLine}
                   alt=""
@@ -24,20 +24,22 @@ const Hero = () => {
             </h1>
 
             <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
-              Industry Insight. Trusted Results.
+              Boutique legal expertise for organisations navigating Nigeria’s
+              dynamic oil &amp; gas, power, mining, and maritime industries.
               {/* Expert Legal Solutions. */}
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-5">
-            <button className="flex items-center rounded-md bg-primary-clr hover:bg-primary-dull text-white font-semibold px-8 py-3 cursor-pointer">
-              <Calendar className="w-5 h-5 mr-2" />
-              Free Consultation
-            </button>
-            <button className="flex items-center rounded-md border border-gray-300 text-white font-semibold hover:bg-black/50 px-8 py-3 bg-transparent cursor-pointer">
+            <a href="">
+              <button className="flex items-center rounded-md border border-gray-300 text-white font-semibold hover:bg-black/50 px-8 py-3 bg-primary-clr transition duration-300 cursor-pointer">
+                Explore Our Services
+              </button>
+            </a>
+            {/* <button className="flex items-center rounded-md border border-gray-300 text-white font-semibold hover:bg-black/50 px-8 py-3 bg-transparent cursor-pointer">
               <Phone className="w-5 h-5 mr-2" />
               Call +234 906 049 0067
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
