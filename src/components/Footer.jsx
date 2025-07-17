@@ -114,8 +114,8 @@ const Footer = () => {
             >
               Linkedin
             </a>
-            <p>Terms of Use | Privacy Policy</p>
           </p>
+          <p>Terms of Use | Privacy Policy</p>
         </div>
       </div>
     </footer>

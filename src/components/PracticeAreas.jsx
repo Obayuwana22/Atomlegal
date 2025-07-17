@@ -26,7 +26,7 @@ const PracticeAreas = () => {
 
         <div className="border border-gray-200 bg-blue-50 rounded-lg">
           <div className="p-6">
-            <ul className="space-y-2 text-xl text-gray-600 ">
+            <ul className="space-y-2 text-xl text-gray-600">
               <li className="flex  items-center">
                 <CheckCircle className="max-w-4 h-4 text-primary-clr mr-2" />
                 Regulatory Consulting & Compliance
