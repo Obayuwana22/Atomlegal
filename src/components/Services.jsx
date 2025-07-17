@@ -16,12 +16,11 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Our Practice Areas
+            Services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We provide comprehensive legal services across multiple practice
-            areas, ensuring you receive expert representation for your specific
-            needs.
+            We support our clients across every stage of their project
+            lifecycle:
           </p>
         </div>
 

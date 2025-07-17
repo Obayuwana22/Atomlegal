@@ -8,7 +8,7 @@ import {
   Users,
 } from "lucide-react";
 import React from "react";
-import { sectors} from "../../data";
+import { sectors } from "../../data";
 
 const Sectors = () => {
   return (
@@ -19,7 +19,8 @@ const Sectors = () => {
             Our Sectors
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Public Sector & Government Relations
+            We focus exclusively on four key sectors where legal clarity meets
+            operational complexity:
           </p>
         </div>
 
