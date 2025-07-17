@@ -53,7 +53,7 @@ const PracticeAreas = () => {
               </li>
               <li className="flex items-center">
                 <CheckCircle className="max-w-4 h-4 text-primary-clr mr-2" />
-                Public Sector & Government Relations
+                Local Content Advisory
               </li>
             </ul>
           </div>

@@ -20,22 +20,22 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
                 <a href="#" className="hover:text-blue-900 transition-colors">
+                  Regulatory Consulting & Compliance
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-blue-900 transition-colors">
                   Corporate & Commercial Advisory
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-900 transition-colors">
-                  Deal Structuring & Transaction Support
+                  Energy Disputes & Conflict Management
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-900 transition-colors">
-                  Regulatory & Public Policy Advisory
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-900 transition-colors">
-                  Dispute Resolution
+                  Public Sector & Government Relations
                 </a>
               </li>
             </ul>
@@ -89,7 +89,7 @@ const Footer = () => {
               </li>
               <li className="flex md:items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                No. 32 Obi Okosi, Gwarinpa-FCT
+                <span> No. 32 Obi Okosi Street, Gwarinpa-FCT</span>
               </li>
               {/* <li className="flex items-center space-x-2">
                 <Clock className="h-4 w-4" />
